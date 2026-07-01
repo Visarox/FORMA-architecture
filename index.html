@@ -23,7 +23,7 @@
       overflow-x: hidden;
       min-height: 100vh;
     }
- 
+
     /* NAV */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 200;
@@ -46,7 +46,7 @@
     .lang-switch { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; color: var(--muted); background: none; border: none; font-family: 'Inter', sans-serif; transition: color 0.2s; padding: 0; }
     .lang-switch:hover, .lang-switch.active { color: var(--ink); }
     .lang-switch.active { font-weight: 500; }
- 
+
     /* HERO */
     .hero {
       width: 100%;
@@ -86,7 +86,7 @@
       font-family: 'Inter', sans-serif; background: none;
     }
     .btn-outline:hover { background: var(--ink); color: var(--cream); }
- 
+
     .scroll-hint {
       position: absolute; bottom: 40px; left: 56px;
       font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase;
@@ -97,7 +97,7 @@
       background: var(--muted); animation: pulse 1.6s ease-in-out infinite;
     }
     @keyframes pulse { 0%,100%{opacity:0.3} 50%{opacity:1} }
- 
+
     /* SLIDESHOW */
     .slideshow-wrapper { position: relative; }
     .slideshow-sticky {
@@ -109,13 +109,13 @@
       pointer-events: none;
     }
     .slide.active { opacity: 1; pointer-events: auto; }
- 
+
     .slide-bg {
       position: absolute; inset: 0;
       background-size: cover; background-position: center; background-repeat: no-repeat;
     }
     .slide-overlay { position: absolute; inset: 0; }
- 
+
     #slide-0 .slide-overlay {
       background: linear-gradient(90deg, rgba(242,237,230,0.92) 0%, rgba(242,237,230,0.5) 50%, rgba(242,237,230,0.05) 100%);
     }
@@ -125,7 +125,7 @@
       background: linear-gradient(90deg, rgba(15,13,10,0.65) 0%, rgba(15,13,10,0.1) 55%, transparent 100%);
     }
     #slide-4 .slide-overlay { background: rgba(15,13,10,0.75); }
- 
+
     .slide-content {
       position: absolute; inset: 0; z-index: 3;
       display: flex; flex-direction: column; justify-content: center;
@@ -137,7 +137,7 @@
     }
     #slide-0 .slide-step { color: var(--muted); }
     #slide-1 .slide-step, #slide-2 .slide-step, #slide-3 .slide-step { color: rgba(255,255,255,0.55); }
- 
+
     .slide-title {
       font-family: 'Cormorant Garamond', serif;
       font-size: clamp(2.5rem, 4.5vw, 4rem);
@@ -146,13 +146,13 @@
     }
     #slide-0 .slide-title { color: var(--ink); }
     #slide-1 .slide-title, #slide-2 .slide-title, #slide-3 .slide-title { color: #FDFAF6; }
- 
+
     .slide-text {
       font-size: 0.85rem; line-height: 1.85; max-width: 320px; display: block;
     }
     #slide-0 .slide-text { color: var(--muted); }
     #slide-1 .slide-text, #slide-2 .slide-text, #slide-3 .slide-text { color: rgba(253,250,246,0.7); }
- 
+
     .slide-label {
       position: absolute; right: 52px; top: 50%;
       transform: translateY(-50%) rotate(90deg);
@@ -162,7 +162,7 @@
     }
     #slide-0 .slide-label { color: var(--muted); }
     #slide-1 .slide-label, #slide-2 .slide-label, #slide-3 .slide-label { color: rgba(255,255,255,0.3); }
- 
+
     /* CONTACT SLIDE */
     #slide-4 { background: #1C1A17; }
     .contact-panel {
@@ -177,7 +177,7 @@
     .contact-info span { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--warm); margin-top: 8px; display: block; }
     .contact-info a { font-size: 0.82rem; color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
     .contact-info a:hover { color: var(--warm); }
- 
+
     .contact-form-wrap { flex: 1; max-width: 580px; }
     .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
     .form-full { grid-column: 1 / -1; }
@@ -195,7 +195,7 @@
     .field input:focus, .field textarea:focus, .field select:focus { border-color: var(--warm); }
     .field select option { background: #1C1A17; color: #FDFAF6; }
     .field textarea { resize: none; height: 90px; }
- 
+
     .form-submit { margin-top: 18px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
     .form-submit button {
       display: inline-flex; align-items: center; gap: 12px;
@@ -207,7 +207,7 @@
     .form-submit button:hover { background: var(--warm); border-color: var(--warm); color: var(--ink); }
     .form-note { font-size: 0.68rem; color: rgba(255,255,255,0.22); }
     .form-success { display: none; font-size: 0.82rem; color: var(--warm); margin-top: 12px; }
- 
+
     /* DOTS */
     .slide-counter {
       position: absolute; bottom: 40px; right: 52px; z-index: 10;
@@ -220,12 +220,12 @@
     .counter-dot.active { background: #FDFAF6; transform: scale(1.6); }
     .plan-active .counter-dot { background: rgba(28,26,23,0.2); }
     .plan-active .counter-dot.active { background: var(--ink); transform: scale(1.6); }
- 
+
     .slide-progress {
       position: absolute; bottom: 0; left: 0; height: 2px;
       background: var(--warm); z-index: 10; transition: width 0.08s linear;
     }
- 
+
     /* FOOTER */
     footer {
       background: #141210; color: rgba(255,255,255,0.45);
@@ -247,7 +247,7 @@
       padding: 22px 56px; font-size: 0.68rem; color: rgba(255,255,255,0.2);
       display: flex; justify-content: space-between;
     }
- 
+
     @media (max-width: 1024px) {
       .contact-panel { gap: 40px; }
       .form-grid { grid-template-columns: 1fr; }
@@ -269,7 +269,7 @@
   </style>
 </head>
 <body>
- 
+
   <nav id="mainNav">
     <a href="index.html" class="nav-logo">FORMA<span>Architecture Studio</span></a>
     <ul class="nav-links">
@@ -285,7 +285,7 @@
       <button class="lang-switch" id="btnEN" onclick="setLang('en')">EN</button>
     </div>
   </nav>
- 
+
   <section class="hero">
     <div class="hero-content">
       <span class="hero-eyebrow" data-de="Architektur &amp; Design" data-en="Architecture &amp; Design">Architektur &amp; Design</span>
@@ -303,11 +303,11 @@
     </div>
     <div class="scroll-hint"><span data-de="Scrollen" data-en="Scroll">Scrollen</span></div>
   </section>
- 
+
   <div class="slideshow-wrapper" id="slideshow">
     <div id="scrollSpacer"></div>
     <div class="slideshow-sticky">
- 
+
       <div class="slide active" id="slide-0">
         <div class="slide-bg" style="background-image:url('images/grundriss.png'); background-size:contain; background-position:right center; background-color:#F2EDE6;"></div>
         <div class="slide-overlay"></div>
@@ -318,7 +318,7 @@
         </div>
         <span class="slide-label" data-de="Planung" data-en="Planning">Planung</span>
       </div>
- 
+
       <div class="slide" id="slide-1">
         <div class="slide-bg" style="background-image:url('images/aussen-konzept.png');"></div>
         <div class="slide-overlay"></div>
@@ -329,7 +329,7 @@
         </div>
         <span class="slide-label" data-de="Architektur" data-en="Architecture">Architektur</span>
       </div>
- 
+
       <div class="slide" id="slide-2">
         <div class="slide-bg" style="background-image:url('images/aussen-fertig.png');"></div>
         <div class="slide-overlay"></div>
@@ -340,7 +340,7 @@
         </div>
         <span class="slide-label" data-de="Realisierung" data-en="Realisation">Realisierung</span>
       </div>
- 
+
       <div class="slide" id="slide-3">
         <div class="slide-bg" style="background-image:url('images/aussen-nah.png');"></div>
         <div class="slide-overlay"></div>
@@ -351,7 +351,7 @@
         </div>
         <span class="slide-label" data-de="Innenarchitektur" data-en="Interior Design">Innenarchitektur</span>
       </div>
- 
+
       <div class="slide" id="slide-4">
         <div class="slide-bg" style="background-image:url('images/innenraum.png'); opacity:0.15; filter:saturate(0.3);"></div>
         <div class="slide-overlay"></div>
@@ -426,7 +426,7 @@
           </div>
         </div>
       </div>
- 
+
       <div class="slide-counter" id="slideCounter">
         <div class="counter-dot active"></div>
         <div class="counter-dot"></div>
@@ -437,7 +437,7 @@
       <div class="slide-progress" id="slideProgress" style="width:0%"></div>
     </div>
   </div>
- 
+
   <footer>
     <div>
       <a href="index.html" class="footer-logo">FORMA<span>Architecture Studio</span></a>
@@ -464,7 +464,7 @@
     <span>© 2026 FORMA Architecture Studio</span>
     <span data-de="Alle Rechte vorbehalten" data-en="All rights reserved">Alle Rechte vorbehalten</span>
   </div>
- 
+
   <script>
     // LANG
     function setLang(l) {
@@ -475,26 +475,26 @@
       document.getElementById('btnDE').classList.toggle('active', l === 'de');
       document.getElementById('btnEN').classList.toggle('active', l === 'en');
     }
- 
+
     // NAV scroll
     const nav = document.getElementById('mainNav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 60);
     });
- 
+
     // SLIDESHOW
     const SLIDE_COUNT = 5;
     const SCROLL_PER_SLIDE = window.innerHeight * 1.4;
     const totalH = SCROLL_PER_SLIDE * SLIDE_COUNT;
     document.getElementById('scrollSpacer').style.height = totalH + 'px';
- 
+
     const wrapper  = document.querySelector('.slideshow-wrapper');
     const slides   = document.querySelectorAll('.slide');
     const dots     = document.querySelectorAll('.counter-dot');
     const progress = document.getElementById('slideProgress');
     const counter  = document.getElementById('slideCounter');
     let cur = 0;
- 
+
     function update() {
       const scrolled = -wrapper.getBoundingClientRect().top;
       if (scrolled < 0) return;
@@ -512,7 +512,7 @@
     }
     window.addEventListener('scroll', update, { passive: true });
     update();
- 
+
     // FORM
     function submitForm(e) {
       e.preventDefault();
